@@ -8,9 +8,24 @@
 @media(max-width:500px)
 {
     .body{
-        grid-template-rows: auto;
+        grid-template-rows: 50px 50px 1fr 50px 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "card";
     }
 }
+
+.rubik-doodle-shadow-regular {
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .coda-regular {
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 body{
     display: grid;
@@ -19,8 +34,8 @@ body{
     background: linear-gradient(135deg, #40c9a2, #00ced1);
 }
 
-
 .header{
+    position: static;
     height: 10vh;
     padding: 2% 5%;
     align-items: center;
@@ -28,6 +43,55 @@ body{
     background-color: #0e1c36;
     color: #e5f9e0;
 }
+
+.tank1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 40vh;
+}
+
+.tank2{
+    height: 50vh;
+    width:100vw;
+    position: relative;
+    text-align: center;
+    align-content: space-between;
+    justify-self: center;
+    padding: 4rem 0.5rem;
+    margin: 0;
+}
+
+.col1{
+    display: flex;
+    padding: 4rem 0.5rem;
+    width: 40vw;
+    height: 40vh;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.col2{
+    display: flex;
+    padding: 4rem 0.5rem;
+    width: 60vw;
+    height: 40vh;
+    align-content: center;
+}
+
+.card{
+    min-width: 500px;
+    width:600px;
+    display: flex;
+    height: fit-content;
+}
+
+.col1 img{
+    height: 100%;
+}
+
+
 
 .icon{
     margin-top: 1vh;
@@ -56,23 +120,42 @@ body{
     font-weight: 500;
 }
 
-.card{
-    min-width: 70px;
-    width:fit-content;
+
+
+.container{
+    top: 0rem;
+    position: relative;
+    margin: 5px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.container img{
     display: flex;
-    justify-self: center;
-    align-self: flex-start;
-    height: fit-content;
+    width:auto;
+    height: 275px;
+    min-height: 100px;
+}
+
+.container h2{
+    font-size: 24px;
+    font-family: 'coda',sans-serif;
+}
+
+.phrase{
+    font-weight: 600;
+    font-size: 80px;
 }
 
 .dropdown{
-    max-width: 200px;
     min-width: 140px;
-    width:100%;
+    width:20vw;
     align-self: center;
     margin: 5px;
     position: relative;
-    width: 40%;
     border-radius: 32px;
     background-color: #0e1c36;
     color: #e5f9e0;
@@ -81,7 +164,7 @@ body{
 }
 
 .dropdowntext{
-
+    
     margin: 1vh;
     display: flex;
     justify-content: space-between;
@@ -109,6 +192,7 @@ body{
 }
 
 .dropdownlist{
+    
     left: 0;
     margin-top: 0.5rem;
     list-style-type: none;
@@ -123,10 +207,14 @@ body{
 }
 
 #list.show{
-    max-height: 300px;
+    scrollbar-width: thin;
+    max-height: 10rem;
+    overflow-y: scroll;
 }
 
+
 .list-item{
+    
     font-size: 0.9rem;
     font-weight: 500;
     padding: 1rem 0 1rem 1.5rem;
@@ -143,13 +231,13 @@ body{
     margin: 5px;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 70vw;
     color:azure;
 }
 
 .search input{
     min-width: 170px;
-    max-width: 400px;
+    
     padding: 1rem;
     width: 100%;
     font-size: 1rem;
@@ -168,8 +256,8 @@ body{
     outline: 0;
     border-radius: 50%;
     background: azure;
-    width: 30%;
-    height: 100%;
+    max-height: 56px;
+    min-height: 56px;
     cursor: pointer;
 }
 
@@ -180,7 +268,10 @@ body{
 
 
 .search button img{
-    height : 20px
+    position: relative;
+    height: 20px;
+    top: 2.5px;
+
 }
 
 
