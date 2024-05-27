@@ -21,8 +21,19 @@ input.addEventListener("keypress",(event)=>{
 });
 
 searchbtn.onclick=() =>{
-    console.log(`searching for ${input.value}`);
+    if(input.value!="")
+        {
+            console.log(`searching for ${input.value}`);
+
+            if(input.value=="quiz example")
+                {
+                    window.location.href="index1.html";
+                }
+        }
+    else
+    console.log("empty input field");
 };
+    
 
 
 

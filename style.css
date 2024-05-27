@@ -14,11 +14,6 @@
     }
 }
 
-.rubik-doodle-shadow-regular {
-    font-family: "Rubik Doodle Shadow", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
 
   .coda-regular {
     font-family: "Coda", system-ui;
@@ -65,8 +60,8 @@ body{
 
 .col1{
     display: flex;
-    padding: 0.5rem 0.5rem;
-    width: 45vw;
+    padding: 4rem 0.5rem 0 0.5rem;
+    width: 44vw;
     height: 40vh;
     align-content: center;
     justify-content: flex-end;
@@ -75,8 +70,8 @@ body{
 
 .col2{
     display: flex;
-    padding: 4rem 0.5rem 2rem 4rem;
-    width: 55vw;
+    padding: 8rem 0.5rem 0 0;
+    width: 56vw;
     height: 40vh;
     align-content: center;
 }
@@ -90,6 +85,7 @@ body{
 
 .col1 img{
     height: 100%;
+    filter: hue-rotate(-30deg);
 }
 
 
@@ -215,7 +211,7 @@ body{
 
 
 .list-item{
-    
+    text-align: left;
     font-size: 0.9rem;
     font-weight: 500;
     padding: 1rem 0 1rem 1.5rem;
@@ -223,9 +219,13 @@ body{
     transition: margin-left 0.2s ease;
 }
 
+.list-item a{
+    all: unset;
+}
+
 .list-item:hover{
     margin-left: 0.5rem;
-    color: #40c9a2;
+    color: #FF607D;
 }
 
 .search{
@@ -238,7 +238,7 @@ body{
 
 .search input{
     min-width: 170px;
-    
+    margin: 4px;
     padding: 1rem;
     width: 100%;
     font-size: 1rem;
@@ -262,7 +262,7 @@ body{
     cursor: pointer;
 }
 
-.search button:active{
+.search button:active,.search button:hover{
     background-color: #A3F7B5;
     
 }
