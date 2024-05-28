@@ -1,5 +1,21 @@
-//importing quiz1
-//import { quiz1 } from "./script2";
+//setting height of section2
+let sec1h=document.querySelector(".section1").offsetHeight;
+document.querySelector(".section2").style.height=((0.9*window.innerHeight)-sec1h-2)+"px";
+
+//setting height for col2 rows
+let r1h=document.querySelector(".row1").offsetHeight;
+let r2=document.querySelector(".row2");
+let r3=document.querySelector(".row3");
+let col1h=document.querySelector(".col1").offsetHeight;
+r2.style.top=(r1h/col1h*100)+"%";
+r2.style.height=100-(r1h/col1h*100)-10+"%";
+
+let th=document.querySelector(".tabs").offsetHeight;
+let pnl=document.querySelector(".panel");
+pnl.style.height=100-(th/col1h*100)-10+"%";
+pnl.style.top=(th/col1h*100)+"%";
+
+
 
 /*
  string question , string arr[4] options, int correct-right option index,level,time
@@ -53,37 +69,13 @@ const quiz1=new quiz(
     "Starry Night",
     30,
     15,
-    ["Space","Science","Stars","Nature"],
+    ["Space","Science","Stars"],
     "How much do you observe our fascinating sky?",
     [Qb1,Qb2,Qb1,Qb2,Qb1,Qb1,Qb2,Qb1,Qb2,Qb1,Qb1,Qb2,Qb1,Qb2,Qb1]
 );
 
 
 
-console.log(quiz1);
-//displaying data
-document.querySelector(".row1-name h1").innerHTML=quiz1.name;
-
-for(let i=0;i<quiz1.categories.length;i++)
-    {
-        let item=document.querySelector(".categories").appendChild(document.createElement("li"));
-        item.className="category";
-        item.href="#";
-        item.textContent=quiz1.categories[i];
-    }
-
-    document.querySelector("#Time").innerHTML="Time : "+quiz1.time+"mins";
-    document.querySelector("#noQ").innerHTML="Number of Questions : "+quiz1.numofQ;
-    document.querySelector(".row4-start p").innerHTML=quiz1.phrase;    
-
-//back button function
-document.querySelector("#back-btn").onclick=() =>{
-    window.history.go(-1);
-};
-
-document.querySelector("#start-btn").onclick=() =>{
-    console.log("Starting quiz and timer");
-    //set windowd=s location to question link
-    window.location.href="index2.html";
-};
-
+//exporting sample quiz
+//export{quiz1};
+module.exports = quiz1

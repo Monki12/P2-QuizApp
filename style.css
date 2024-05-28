@@ -5,14 +5,7 @@
     margin:0;
 }
 
-@media(max-width:500px)
-{
-    .body{
-        grid-template-rows: 50px 50px 1fr 50px 50px;
-        grid-template-columns: 1fr;
-        grid-template-areas: "header" "card";
-    }
-}
+
 
 
   .coda-regular {
