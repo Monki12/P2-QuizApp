@@ -1,0 +1,364 @@
+[
+    {
+      "name": "Capital Cities",
+      "time": 10,
+      "numofQ": 6,  
+      "categories": ["Geography", "World"],
+      "phrase": "Guess the capitals of these countries!",
+      "Qblocks": [
+        {
+          "question": "What is the capital of France?",
+          "options": ["London", "Paris", "Berlin", "Madrid"],
+          "ans": 1,
+          "level": 1
+        },
+        {
+          "question": "What is the capital of Italy?",
+          "options": ["Rome", "Milan", "Venice", "Florence"],
+          "ans": 0,
+          "level": 1
+        },
+        {
+          "question": "What is the capital of Japan?",
+          "options": ["Tokyo", "Kyoto", "Osaka", "Yokohama"],
+          "ans": 0,
+          "level": 1
+        },
+        {
+          "question": "What is the capital of Germany?",
+          "options": ["Berlin", "Munich", "Hamburg", "Cologne"],
+          "ans": 0,
+          "level": 1
+        },
+        {
+          "question": "What is the capital of Canada?",
+          "options": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
+          "ans": 0,
+          "level": 1
+        },
+        {
+          "question": "What is the capital of Australia?",
+          "options": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
+          "ans": 0,
+          "level": 2
+        }
+      ]
+    },
+    {
+      "name": "Science for Everyone",
+      "time": 15,
+      "numofQ": 8,  
+      "categories": ["Science", "General Knowledge"],
+      "phrase": "Test your scientific understanding!",
+      "Qblocks": [
+        {
+          "question": "What is the basic unit of heredity?",
+          "options": ["Cell", "Gene", "Chromosome", "Tissue"],
+          "ans": 1,
+          "level": 2
+        },
+        {
+          "question": "The Earth revolves around the?",
+          "options": ["Moon", "Sun", "Stars", "Galaxy"],
+          "ans": 1,
+          "level": 1
+        },
+        {
+          "question": "What is the process by which plants make their own food?",
+          "options": ["Photosynthesis", "Cellular respiration", "Decomposition", "Transpiration"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the state of matter with definite shape and volume?",
+          "options": ["Solid", "Liquid", "Gas", "Plasma"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the process by which water changes from a liquid to a gas?",
+          "options": ["Evaporation", "Condensation", "Precipitation", "Sublimation"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the largest organ in the human body?",
+          "options": ["Skin", "Heart", "Lungs", "Stomach"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the process by which cells break down glucose to release energy?",
+          "options": ["Cellular respiration", "Photosynthesis", "Decomposition", "Transpiration"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the scientific study of living organisms?",
+          "options": ["Biology", "Chemistry", "Physics", "Geology"],
+          "ans": 0,
+          "level": 2
+        }
+      ]
+    },
+    {
+        "name": "History in the Making",
+        "time": 20,
+        "numofQ": 7,  
+        "categories": ["History", "World Events"],
+        "phrase": "Can you recall some major historical events?",
+        "Qblocks": [
+          {
+            "question": "In which year did World War II begin?",
+            "options": ["1914", "1939", "1945", "1989"],
+            "ans": 1,
+            "level": 2
+          },
+          {
+            "question": "Who was the first person to walk on the moon?",
+            "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Laika"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "What major event marked the end of the Cold War?",
+            "options": ["Fall of the Berlin Wall", "Cuban Missile Crisis", "Korean War", "Vietnam War"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "The September 11th attacks occurred in which year?",
+            "options": ["2001", "2003", "2008", "2011"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "What social media platform emerged during the Arab Spring protests?",
+            "options": ["Facebook", "Twitter", "Instagram", "Snapchat"],
+            "ans": 1,
+            "level": 3
+          },
+          {
+            "question": "Which country hosted the 2016 Summer Olympics?",
+            "options": ["Brazil", "China", "Japan", "Great Britain"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "What global pandemic emerged in late 2019?",
+            "options": ["COVID-19", "Ebola", "HIV/AIDS", "SARS"],
+            "ans": 0,
+            "level": 2
+          }
+        ]
+      },
+      {
+        "name": "Math Challenge",
+        "time": 25,
+        "numofQ": 10,  
+        "categories": ["Mathematics", "Numbers"],
+        "phrase": "Sharpen your math skills with this challenge!",
+        "Qblocks": [
+          {
+            "question": "What is the square root of 25?",
+            "options": ["3", "5", "7", "10"],
+            "ans": 1,
+            "level": 1
+          },
+          {
+            "question": "Solve for x: 2x + 5 = 11",
+            "options": ["x = 2", "x = 3", "x = 4", "x = 5"],
+            "ans": 2,
+            "level": 2
+          },
+          {
+            "question": "What is the area of a rectangle with length 8 cm and width 5 cm?",
+            "options": ["20 cm", "40 cm", "60 cm", "80 cm"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "What is the volume of a cube with side length 4 m?",
+            "options": ["16 m³", "32 m³", "64 m³", "128 m³"],
+            "ans": 2,
+            "level": 2
+          },
+          {
+            "question": "Simplify the expression: 2x + 3y - 5x + y",
+            "options": ["-3x + 4y", "-3x - 2y", "5x + 4y", "No simplification possible"],
+            "ans": 0,
+            "level": 3
+          },
+          {
+            "question": "What is the slope of the line represented by the equation y = 2x + 1?",
+            "options": ["1", "2", "3", "4"],
+            "ans": 1,
+            "level": 3
+          },
+          {
+            "question": "Find the x-intercept of the line represented by the equation y = 3x - 2",
+            "options": ["-2/3", "2/3", "-1", "1"],
+            "ans": 2,
+            "level": 3
+          },
+          {
+            "question": "What is the quadratic formula?",
+            "options": ["x = (-b ± √(b² - 4ac)) / 2a", "x = a + b", "x² + y² = r²", "y = mx + b"],
+            "ans": 0,
+            "level": 3
+          },
+          {
+            "question": "Solve for x in the equation x^2 + 5x - 6 = 0",
+            "options": ["x = 1, x = -6", "x = 2, x = -3", "x = -1, x = 6", "There are no real number solutions"],
+            "ans": 1,
+            "level": 3
+          },
+          {
+            "question": "What is the derivative of the function f(x) = 2x^2 + 3x - 5?",
+            "options": ["4x + 3", "x^2 + 3x - 2", "4x", "There is no derivative for this function"],
+            "ans": 0,
+            "level": 4
+          }
+        ]
+    },
+
+    {
+        "name": "Treasures of the World",
+        "time": 12,
+        "numofQ": 5,
+        "categories": ["History", "Geography", "Culture"],
+        "phrase": "Explore famous landmarks and cultural wonders!",
+        "Qblocks": [
+          {
+            "question": "What is the name of the ancient city built by the Incas high in the Andes mountains?",
+            "options": ["Machu Picchu", "Teotihuacan", "Chichen Itza", "Tikal"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "The Great Wall of China is one of the most famous landmarks. In which country is it located?",
+            "options": ["China", "Japan", "India", "Mongolia"],
+            "ans": 0,
+            "level": 1
+          },
+          {
+            "question": "What is the world's largest opera house by volume?",
+            "options": ["Sydney Opera House", "La Scala", "Metropolitan Opera House", "Bolshoi Theatre"],
+            "ans": 3,
+            "level": 3
+          },
+          {
+            "question": "The Taj Mahal is an iconic white marble mausoleum located in:",
+            "options": ["India", "Pakistan", "Iran", "Afghanistan"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "Which famous statue in New York City depicts a woman holding a torch?",
+            "options": ["Statue of Liberty", "Christ the Redeemer", "Angel of Independence", "The Thinker"],
+            "ans": 0,
+            "level": 1
+          }
+        ]
+      },
+      {
+        "name": "Animal Kingdom",
+        "time": 18,
+        "numofQ": 7,
+        "categories": ["Science", "Biology", "Nature"],
+        "phrase": "Test your knowledge about the amazing animal world!",
+        "Qblocks": [
+          {
+            "question": "What is the largest living land animal?",
+            "options": ["Elephant", "Giraffe", "Rhinoceros", "Hippopotamus"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "Whales and dolphins are mammals that belong to which order?",
+            "options": ["Cetacea", "Carnivora", "Rodentia", "Primates"],
+            "ans": 0,
+            "level": 3
+          },
+          {
+            "question": "Snakes are cold-blooded reptiles. How do they maintain their body temperature?",
+            "options": ["Basking in the sun", "Hibernating in winter", "Generating internal heat", "All of the above"],
+            "ans": 0,
+            "level": 2
+          },
+          {
+            "question": "What is the process by which birds fly?",
+            "options": ["Using hollow bones and feathers for lift", "Rapid wing movement to create air pressure", "A combination of both", "None of the above"],
+            "ans": 2,
+            "level": 3
+          },
+          {
+            "question": "What is the group name for a large number of owls?",
+            "options": ["Parliament",  "Pride", "Pack", "Colony"],
+            "ans": 0,
+            "level": 3
+          },
+          {
+            "question": "What is the scientific classification for insects?",
+            "options": ["Insecta", "Arachnida", "Amphibia", "Reptilia"],
+            "ans": 0,
+            "level": 3
+          },
+          {
+            "question": "What is the process by which plants capture sunlight to produce energy?",
+            "options": ["Photosynthesis", "Cellular respiration", "Transpiration", "Decomposition"],
+            "ans": 0,
+            "level": 2
+          }
+        ]
+    },
+      
+    {
+            "name": "Literary Detectives",
+            "time": 15,
+            "numofQ": 6,
+            "categories": ["Literature", "Mystery"],
+            "phrase": "Put on your detective hat and solve literary puzzles!",
+            "Qblocks":
+         [
+            {
+                "question": "What is the name of the witty detective created by Sir Arthur Conan Doyle?",
+                "options": ["Sherlock Holmes", "Hercule Poirot","Miss Marple", "Adrian Monk"],
+                "ans": 0,
+                "level": 2
+            },
+            {
+                "question": "In F. Scott Fitzgerald's 'The Great Gatsby', what is the color of the light at the end of Daisy Buchanan's dock?",
+                "options": ["Green", "Yellow", "Blue", "White"],
+                "ans": 0,
+                "level": 3
+            },
+            {
+                "question": "What is the genre of Harper Lee's Pulitzer Prize-winning novel 'To Kill a Mockingbird'?",
+                "options": ["Coming-of-age", "Historical fiction", "Legal drama", "Southern Gothic"],
+                "ans": 3,
+                "level": 3
+            },
+            {
+                "question": "What is the famous opening line of Charles Dickens' novel 'A Tale of Two Cities'?",
+                "options": ["It was the best of times, it was the worst of times...", "Call me Ishmael.", "In a hole in the ground there lived a hobbit.", "I write the story of my life."],
+                "ans": 0,
+                "level": 2
+            },
+            {
+                "question": "Who is the narrator of Emily Brontë's gothic novel 'Wuthering Heights'?",
+                "options": ["Mr. Lockwood", "Heathcliff", "Cathy Earnshaw", "Isabella Linton"],
+                "ans": 0,
+                "level": 3
+            },
+            {
+                "question": "What is the significance of the yellow wallpaper in Charlotte Perkins Gilman's short story 'The Yellow Wallpaper'?",
+                "option": ["A symbol of madness and isolation", "A representation of wealth and luxury", "A metaphor for spring and new beginnings", "A reminder of a past love"],
+                "ans": 0,
+                "level": 3
+            }
+        ]
+    }
+      
+]
+  

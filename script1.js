@@ -1,16 +1,33 @@
 //importing quiz1
 //import { quiz1 } from "./script2";
 
+//getting selected quiz object
+const storedQuiz = localStorage.getItem('selectedQuiz');
+let selectedQuiz={};
+if (storedQuiz) {
+    selectedQuiz = JSON.parse(storedQuiz); // Parse JSON back to object
+  // Access and display quiz content using selectedQuiz object
+
+} else {
+  console.warn("No selected quiz found in local storage");
+  // Handle cases where no quiz is stored
+}
+
+//  IMPORTANT- use to removeselected after whole quiz is complete
+//localStorage.removeItem('selectedQuiz');
+
+//class object creation +sample object for css
 /*
  string question , string arr[4] options, int correct-right option index,level,time
- */
+
 //class QAblock
 class QAblock{
-    constructor(question,options,ans,level){
+    constructor(question,options,ans,level,selected){
         this.question=question;
         this.options=options;
         this.ans=ans;
         this.level=level;
+        this.selected=selected;
     }
 }
 
@@ -18,7 +35,7 @@ class QAblock{
 /* 
 int- number of questions , string array- categories , obj arr -question block objects-easy,med,tough , int time, String name, string arr - phrase
 
- */
+
 class quiz{
     constructor(name,time,numofQ,categories,phrase,Qblocks){
         this.name=name;
@@ -57,24 +74,22 @@ const quiz1=new quiz(
     "How much do you observe our fascinating sky?",
     [Qb1,Qb2,Qb1,Qb2,Qb1,Qb1,Qb2,Qb1,Qb2,Qb1,Qb1,Qb2,Qb1,Qb2,Qb1]
 );
+*/
 
-
-
-console.log(quiz1);
 //displaying data
-document.querySelector(".row1-name h1").innerHTML=quiz1.name;
+document.querySelector(".row1-name h1").innerHTML=selectedQuiz.name;
 
-for(let i=0;i<quiz1.categories.length;i++)
+for(let i=0;i<selectedQuiz.categories.length;i++)
     {
         let item=document.querySelector(".categories").appendChild(document.createElement("li"));
         item.className="category";
         item.href="#";
-        item.textContent=quiz1.categories[i];
+        item.textContent=selectedQuiz.categories[i];
     }
 
-    document.querySelector("#Time").innerHTML="Time : "+quiz1.time+"mins";
-    document.querySelector("#noQ").innerHTML="Number of Questions : "+quiz1.numofQ;
-    document.querySelector(".row4-start p").innerHTML=quiz1.phrase;    
+    document.querySelector("#Time").innerHTML="Time : "+selectedQuiz.time+"mins";
+    document.querySelector("#noQ").innerHTML="Number of Questions : "+selectedQuiz.numofQ;
+    document.querySelector(".row4-start p").innerHTML=selectedQuiz.phrase;    
 
 //back button function
 document.querySelector("#back-btn").onclick=() =>{

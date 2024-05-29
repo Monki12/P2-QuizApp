@@ -1,32 +1,23 @@
-//setting height of section2
-let sec1h=document.querySelector(".section1").offsetHeight;
-document.querySelector(".section2").style.height=((0.9*window.innerHeight)-sec1h-2)+"px";
 
-//setting height for col2 rows
-let r1h=document.querySelector(".row1").offsetHeight;
-let r2=document.querySelector(".row2");
-let r3=document.querySelector(".row3");
-let col1h=document.querySelector(".col1").offsetHeight;
-r2.style.top=(r1h/col1h*100)+"%";
-r2.style.height=100-(r1h/col1h*100)-10+"%";
-
-let th=document.querySelector(".tabs").offsetHeight;
-let pnl=document.querySelector(".panel");
-pnl.style.height=100-(th/col1h*100)-10+"%";
-pnl.style.top=(th/col1h*100)+"%";
-
-
+/**
+ * sample data used
+ * height of divs
+ * displaying right data
+ * button functions
+ * export
+ */
 
 /*
  string question , string arr[4] options, int correct-right option index,level,time
  */
 //class QAblock
 class QAblock{
-    constructor(question,options,ans,level){
+    constructor(question,options,ans,level,selected){
         this.question=question;
         this.options=options;
         this.ans=ans;
         this.level=level;
+        this.selected=selected;
     }
 }
 
@@ -75,7 +66,41 @@ const quiz1=new quiz(
 );
 
 
+//setting height of section2
+let sec1h=document.querySelector(".section1").offsetHeight;
+document.querySelector(".section2").style.height=((0.9*window.innerHeight)-sec1h-2)+"px";
+
+//setting height for col2 rows
+let r1h=document.querySelector(".row1").offsetHeight;
+let r2=document.querySelector(".row2");
+let r3=document.querySelector(".row3");
+let col1h=document.querySelector(".col1").offsetHeight;
+r2.style.top=(r1h/col1h*100)+"%";
+r2.style.height=100-(r1h/col1h*100)-10+"%";
+
+let th=document.querySelector(".tabs").offsetHeight;
+let pnl=document.querySelector(".panel");
+pnl.style.height=100-(th/col1h*100)-10+"%";
+pnl.style.top=(th/col1h*100)+"%";
+
+
+//*************displaying data***************
+let Qno=1;
+document.querySelector("#Question-no").innerHTML="Question No. : "+Qno;
+
+
+
+
+//buttons css and functions
+let options=document.querySelectorAll(".option button");
+options.forEach(option =>{
+    option.addEventListener("click",()=>{
+        [...options].map(prev => prev.style.cssText="background: #B6C8A9");
+        option.style.cssText="background: #C8EAD3";
+        //save selected option
+    })
+})
 
 //exporting sample quiz
 //export{quiz1};
-module.exports = quiz1
+//!!!!!module.exports = quiz1

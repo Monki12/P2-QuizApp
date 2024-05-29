@@ -1,3 +1,36 @@
+
+import quizData from "./quizdata.json" with {type:'json'};
+console.log(quizData);
+
+//getting all uniques categories to display in dropdown
+function createCategoryListItems(quizData, ulElement) {
+    const categoryCounts = {}; // Object to store category counts
+  
+    // Extract categories and count occurrences
+    for (const quiz of quizData) {
+      for (const category of quiz.categories) {
+        categoryCounts[category] = (categoryCounts[category] || 0) + 1;
+      }
+    }
+  
+    // Create and append li elements with category and count
+    for (const category in categoryCounts) {
+      const listItem = document.createElement('li');
+      listItem.classList.add('list-item');
+  
+      const categoryLink = document.createElement('a');
+      categoryLink.textContent = `${category} (${categoryCounts[category]})`; // Include count
+      categoryLink.href = '#'; // Link to "#" (can be modified for specific pages)
+      listItem.appendChild(categoryLink);
+  
+      ulElement.appendChild(listItem);
+    }
+  }
+
+createCategoryListItems(quizData,document.querySelector(".dropdownlist"));
+ 
+
+
 // Dropdown list
 let dropdownbtn = document.querySelector("#droptext");
 let list = document.querySelector("#list");
@@ -23,18 +56,39 @@ input.addEventListener("keypress",(event)=>{
 searchbtn.onclick=() =>{
     if(input.value!="")
         {
-            console.log(`searching for ${input.value}`);
-
-            if(input.value=="quiz example")
-                {
-                    window.location.href="index1.html";
+            console.log(`Searching for (case-insensitive): ${input.value}`);
+          
+            const matchingQuizIndex = quizData.findIndex(quiz => {
+                const quizNameLower = quiz.name.toLowerCase();
+                for (const category of quiz.categories) {
+                        const categoryLower = category.toLowerCase();
+                        if (input.value === categoryLower || input.value === quizNameLower) {
+                            return true; // Stop searching if a match is found
+                        }
                 }
-        }
+                return false;
+            });
+          
+            if (matchingQuizIndex !== -1) {
+                console.log(`Found matching quiz at index: ${matchingQuizIndex}`);
+                const selectedQuiz = quizData[matchingQuizIndex];
+                localStorage.setItem('selectedQuiz', JSON.stringify(selectedQuiz));
+                window.location.href = "index1.html";
+            } else {
+                 console.log("No matching quiz or category found.");
+            }
+          }
     else
     console.log("empty input field");
 };
     
-
+document.querySelectorAll(".list-item").forEach(category=>category.addEventListener("click",()=>{
+    const text = category.textContent.trim();
+    const openingIndex = text.indexOf("("); // Find the opening parenthesis index
+    const selectedCategory = openingIndex === -1 ? text : text.substring(0, openingIndex);
+    localStorage.setItem('selectedCategory', JSON.stringify(selectedCategory));
+    window.location.href = "index3.html";
+}));
 
 
 //voice search and icon animation
