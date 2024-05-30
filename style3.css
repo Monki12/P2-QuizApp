@@ -4,10 +4,48 @@
     position: relative;
 }
 
+.tank1{
+    position: absolute;
+    top:10vh;
+    left: 0;
+    height: 90vh;
+    width:18%;
+    margin-right: 2vw;
+    padding: 1rem 2vw;
+    background-color: #0e1c36;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.categories{
+    position: absolute;
+    display: grid;
+    width: 100%;
+    grid-template-rows: auto;
+    height: 90vh ;    
+    padding:0 2rem;
+}
+
+.list-item{
+    color:#A3F7B5;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: margin-left 0.2s ease;
+}
+
+.list-item:hover{
+    margin-left: 0.5rem;
+    color: #FF607D;
+}
 
 .tank{
-    position: relative;
-    width: 96vw;
+    position: absolute;
+    right:0;
+    bottom:0;
+    width:78%;
     height: 86vh;
     margin: 2vh 2vw;
     padding: 1rem;
@@ -18,9 +56,9 @@
 
 .quizCard{
     text-align: center;
-    background: url(./images/night.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    background-position: center;
     margin: 1rem;
     padding: 0;
     height: 80%;
@@ -31,10 +69,12 @@
 }
 
 .backdrop{
+    margin:1rem;
     padding: 1rem;
-    height: 40%;
-    width:100%;
-    border-radius: 30px;
+    height: fit-content;
+    width:auto;
+    border-radius: 24px;
+    display: none;
     transition: filter 0.2s ease-in-out;
 }
 
@@ -47,12 +87,16 @@
 .quizCard:hover p {
     display: block;
     filter: none;
+    color: azure;
   }
  
 .quizCard:hover .backdrop{
     backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
 }  
   .quizCard:hover h4 {
+    font-weight: 500;
     color: azure;
     filter: none;
   }  
@@ -60,11 +104,10 @@
 .quizCard p{
     font-size: 12px;
     margin: 0.2rem 0.2rem 0.2rem 0.5rem;
-    display: none;
 }
 
 .quizCard h4{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     margin: 0.5rem;
 }

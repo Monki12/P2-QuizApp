@@ -41,6 +41,7 @@ body{
 
 .tank2{
     display: grid;
+    grid-template-rows: repeat(2, 70px);
     height: 50vh;
     width: 100vw;
     position: relative;
@@ -49,6 +50,13 @@ body{
     padding: 4rem 0.5rem;
     margin: 0;
     justify-content: center
+}
+
+#error{
+    position: relative;
+    left: 2rem;
+    margin:0.5rem;
+    display:none;
 }
 
 .col1{
@@ -161,7 +169,7 @@ body{
     align-items: center;
     font-size: 1rem;
     font-weight: 500;
-    color: var(--white);
+    
     padding: 0.5rem 1rem 0.5rem 0.5rem;
 }
     

@@ -83,9 +83,20 @@ for(let i=0;i<selectedQuiz.categories.length;i++)
     {
         let item=document.querySelector(".categories").appendChild(document.createElement("li"));
         item.className="category";
-        item.href="#";
         item.textContent=selectedQuiz.categories[i];
     }
+
+//icon button function
+document.querySelector(".icon button").addEventListener("click",()=>{
+    window.location.href = "index.html";
+  });
+
+    document.querySelectorAll(".category").forEach(category=>category.addEventListener("click",()=>{
+        const selectedCategory = category.innerText.trim();
+        localStorage.setItem('selectedCategory', JSON.stringify(selectedCategory));
+        window.location.href = "index3.html";
+    }));
+
 
     document.querySelector("#Time").innerHTML="Time : "+selectedQuiz.time+"mins";
     document.querySelector("#noQ").innerHTML="Number of Questions : "+selectedQuiz.numofQ;
@@ -99,6 +110,6 @@ document.querySelector("#back-btn").onclick=() =>{
 document.querySelector("#start-btn").onclick=() =>{
     console.log("Starting quiz and timer");
     //set windowd=s location to question link
-    window.location.href="index2.html";
+    window.location.href="index4.html";
 };
 

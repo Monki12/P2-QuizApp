@@ -1,10 +1,142 @@
 [
+  {
+    "name": "Potterhead Quiz",
+    "time": 15,
+    "numofQ": 10,
+    "categories": ["Harry Potter", "General Knowledge"],
+    "phrase": "Accio knowledge! Test your Harry Potter expertise!",
+    "bgimgurl": "./images/hogwarts.jpg",
+    "Qblocks": [
+      {
+        "question": "What is the name of the three-headed dog guarding the Philosopher's Stone?",
+        "options": ["Fluffy", "Fang", "Scabbers", "Hedwig"],
+        "ans": 0,
+        "level": 1
+      },
+      {
+        "question": "What spell is used to disarm an opponent?",
+        "options": ["Expelliarmus", "Stupefy", "Petrificus Totalus", "Lumos"],
+        "ans": 0,
+        "level": 1
+      },
+      {
+        "question": "What is the name of the sport played on flying broomsticks?",
+        "options": ["Quidditch", "Gobstones", "Exploding Snap", "Wizard Chess"],
+        "ans": 0,
+        "level": 1
+      },
+      {
+        "question": "How many Horcruxes did Voldemort create?",
+        "options": ["6", "7", "4", "2"],
+        "ans": 1,
+        "level": 2
+      },
+      {
+        "question": "Who is the Defense Against the Dark Arts teacher in Harry's third year?",
+        "options": ["Remus Lupin", "Severus Snape", "Gilderoy Lockhart", "Alastor Moody"],
+        "ans": 2,
+        "level": 2
+      },
+      {
+        "question": "What is the name of the secret organization founded by Albus Dumbledore?",
+        "options": ["The Order of the Phoenix", "The Ministry of Magic", "Diagon Alley", "Hogsmeade"],
+        "ans": 0,
+        "level": 2
+      },
+      {
+        "question": "What is the name of the invisibility cloak Harry inherits?",
+        "options": ["The Deathly Hallows", "The Invisibility Cloak", "The Marauder's Map", "The Philosopher's Stone"],
+        "ans": 1,
+        "level": 3
+      },
+      {
+        "question": "What is the inscription on the Resurrection Stone?",
+        "options": ["I open at the close", "Turn three times and face the enemy", "Death is but a doorway", "For the Greater Good"],
+        "ans": 2,
+        "level": 3
+      },
+      {
+        "question": "What is the name of the platform at King's Cross Station that leads to Hogwarts?",
+        "options": ["Platform 9 ¾", "Platform 10", "Diagon Alley", "Leaky Cauldron"],
+        "ans": 0,
+        "level": 3
+      },
+      {
+        "question": "Who is the author of the Harry Potter series?",
+        "options": ["J.K. Rowling", "C.S. Lewis", "J.R.R. Tolkien", "Roald Dahl"],
+        "ans": 0,
+        "level": 3
+      }
+    ]
+  },
+
+  {
+    "name": "How You Doin'? A Friends Quiz",
+    "time": 10,
+    "numofQ": 8,
+    "categories": ["TV Shows", "Friends"],
+    "phrase": "The One Where You Test Your Friends Knowledge!",
+    "bgimgurl": "./images/friends_centralperk.jpg",
+    "Qblocks": [
+      {
+        "question": "What is the name of the iconic coffeehouse where the friends frequently hang out?",
+        "options": ["Central Perk", "The Bean Hive",  "The Espresso Club", "Monica's Cafe"],
+        "ans": 0,
+        "level": 1
+      },
+      {
+        "question": "What is the name of Phoebe Buffay's unusual pet?",
+        "options": ["Smelly Cat", "Lobster",  "Marcel", "Mr. Nibbles"],
+        "ans": 2,
+        "level": 1
+      },
+      {
+        "question": "What is Chandler Bing's job throughout most of the series?",
+        "options": ["Statistical Analysis", "Advertising",  "Paleontology", "Acting"],
+        "ans": 1,
+        "level": 2
+      },
+      {
+        "question": "What is Monica Geller known for (besides her love of cleaning)?",
+        "options": ["Cooking", "Fashion",  "Paleontology", "Singing"],
+        "ans": 0,
+        "level": 2
+      },
+      {
+        "question": "What is Joey Tribbiani's famous catchphrase?",
+        "options": ["How you doin'?",  "Moo!",  "Pivot!", "We were on a break!"],
+        "ans": 0,
+        "level": 2
+      },
+      {
+        "question": "What is Ross Geller's profession?",
+        "options": ["Paleontologist", "Lawyer",  "Doctor", "Teacher"],
+        "ans": 0,
+        "level": 2
+      },
+      {
+        "question": "What is the name of the Geller Cup, a competition between Monica and Ross?",
+        "ans": "The Holiday Armadillo",
+        "options": ["The Geller Cup",  "The Sibling Showdown", "The Geller Games", "The Holiday Competition"],
+        "level": 3
+      },
+      {
+        "question": "What is the name of Rachel Green's ex-boyfriend who works in fashion?",
+        "options": ["Mark Geller",  "Richard Burke", "Eddie Cahill", "Joshua"],
+        "ans": 1,
+        "level": 3
+      }
+    ]
+  }
+,  
+  
     {
       "name": "Capital Cities",
       "time": 10,
       "numofQ": 6,  
       "categories": ["Geography", "World"],
       "phrase": "Guess the capitals of these countries!",
+      "bgimgurl":"./images/capital.jpg",
       "Qblocks": [
         {
           "question": "What is the capital of France?",
@@ -50,6 +182,7 @@
       "numofQ": 8,  
       "categories": ["Science", "General Knowledge"],
       "phrase": "Test your scientific understanding!",
+      "bgimgurl":"./images/night.jpg",
       "Qblocks": [
         {
           "question": "What is the basic unit of heredity?",
@@ -107,6 +240,7 @@
         "numofQ": 7,  
         "categories": ["History", "World Events"],
         "phrase": "Can you recall some major historical events?",
+        "bgimgurl":"./images/history.jpg",
         "Qblocks": [
           {
             "question": "In which year did World War II begin?",
@@ -158,6 +292,7 @@
         "numofQ": 10,  
         "categories": ["Mathematics", "Numbers"],
         "phrase": "Sharpen your math skills with this challenge!",
+        "bgimgurl":"./images/math.jpg",
         "Qblocks": [
           {
             "question": "What is the square root of 25?",
@@ -228,6 +363,7 @@
         "numofQ": 5,
         "categories": ["History", "Geography", "Culture"],
         "phrase": "Explore famous landmarks and cultural wonders!",
+        "bgimgurl":"./images/treasures.jpg",
         "Qblocks": [
           {
             "question": "What is the name of the ancient city built by the Incas high in the Andes mountains?",
@@ -267,6 +403,7 @@
         "numofQ": 7,
         "categories": ["Science", "Biology", "Nature"],
         "phrase": "Test your knowledge about the amazing animal world!",
+        "bgimgurl":"./images/animal.jpg",
         "Qblocks": [
           {
             "question": "What is the largest living land animal?",
@@ -319,6 +456,7 @@
             "numofQ": 6,
             "categories": ["Literature", "Mystery"],
             "phrase": "Put on your detective hat and solve literary puzzles!",
+            "bgimgurl":"./images/literature.jpg",
             "Qblocks":
          [
             {

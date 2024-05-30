@@ -40,6 +40,7 @@ class quiz{
 }
 //quizclass ends
 
+
 //declaring example question blocks
 const Qb1= new QAblock(
     "Which is the closest start to earth?"
@@ -66,6 +67,7 @@ const quiz1=new quiz(
 );
 
 
+
 //setting height of section2
 let sec1h=document.querySelector(".section1").offsetHeight;
 document.querySelector(".section2").style.height=((0.9*window.innerHeight)-sec1h-2)+"px";
@@ -89,6 +91,10 @@ let Qno=1;
 document.querySelector("#Question-no").innerHTML="Question No. : "+Qno;
 
 
+//icon button function
+document.querySelector(".icon button").addEventListener("click",()=>{
+    window.location.href = "index.html";
+  });
 
 
 //buttons css and functions

@@ -2,6 +2,11 @@
 import quizData from "./quizdata.json" with {type:'json'};
 console.log(quizData);
 
+//icon button function
+document.querySelector(".icon button").addEventListener("click",()=>{
+  window.location.href = "index.html";
+});
+
 //getting all uniques categories to display in dropdown
 function createCategoryListItems(quizData, ulElement) {
     const categoryCounts = {}; // Object to store category counts
@@ -20,7 +25,7 @@ function createCategoryListItems(quizData, ulElement) {
   
       const categoryLink = document.createElement('a');
       categoryLink.textContent = `${category} (${categoryCounts[category]})`; // Include count
-      categoryLink.href = '#'; // Link to "#" (can be modified for specific pages)
+      
       listItem.appendChild(categoryLink);
   
       ulElement.appendChild(listItem);
@@ -53,39 +58,56 @@ input.addEventListener("keypress",(event)=>{
         }
 });
 
-searchbtn.onclick=() =>{
-    if(input.value!="")
-        {
-            console.log(`Searching for (case-insensitive): ${input.value}`);
-          
-            const matchingQuizIndex = quizData.findIndex(quiz => {
-                const quizNameLower = quiz.name.toLowerCase();
-                for (const category of quiz.categories) {
-                        const categoryLower = category.toLowerCase();
-                        if (input.value === categoryLower || input.value === quizNameLower) {
-                            return true; // Stop searching if a match is found
-                        }
-                }
-                return false;
-            });
-          
-            if (matchingQuizIndex !== -1) {
-                console.log(`Found matching quiz at index: ${matchingQuizIndex}`);
-                const selectedQuiz = quizData[matchingQuizIndex];
-                localStorage.setItem('selectedQuiz', JSON.stringify(selectedQuiz));
-                window.location.href = "index1.html";
-            } else {
-                 console.log("No matching quiz or category found.");
-            }
-          }
-    else
-    console.log("empty input field");
+searchbtn.onclick = () => {
+  if (input.value !== "") {
+    document.getElementById("error").style.display = "none";
+    console.log(`Searching for (case-insensitive): ${input.value}`);
+
+    const searchTerm = input.value.trim().toLowerCase(); // Trim and convert to lowercase
+
+    const matchingIndex = quizData.findIndex(quiz => {
+      const quizNameLower = quiz.name.trim().toLowerCase();
+
+      // Check for category match first
+      for (const category of quiz.categories) {
+        const categoryLower = category.trim().toLowerCase();
+        if (searchTerm === categoryLower) {
+          return true; // Stop searching if category matches
+        }
+      }
+
+      // Check for quiz name match if no category match
+      return searchTerm === quizNameLower;
+    });
+
+    if (matchingIndex !== -1) {
+      const selectedItem = quizData[matchingIndex];
+
+      if (searchTerm === selectedItem.name.trim().toLowerCase()) {
+        // Matched quiz name - store quiz and redirect to index1.html
+        localStorage.setItem('selectedQuiz', JSON.stringify(selectedItem));
+        window.location.href = "index1.html";
+      } else {
+        // Matched category name - store category and redirect to index3.html
+        localStorage.setItem('selectedCategory', JSON.stringify(searchTerm));
+        window.location.href = "index3.html";
+      }
+    } else {
+      document.getElementById("error").textContent = "No matching quiz or category found.";
+      document.getElementById("error").style.display = "block";
+    }
+  } else {
+    document.getElementById("error").textContent = "Empty input field.";
+    document.getElementById("error").style.display = "block";
+  }
 };
+
     
 document.querySelectorAll(".list-item").forEach(category=>category.addEventListener("click",()=>{
     const text = category.textContent.trim();
     const openingIndex = text.indexOf("("); // Find the opening parenthesis index
     const selectedCategory = openingIndex === -1 ? text : text.substring(0, openingIndex);
+    
     localStorage.setItem('selectedCategory', JSON.stringify(selectedCategory));
     window.location.href = "index3.html";
 }));
