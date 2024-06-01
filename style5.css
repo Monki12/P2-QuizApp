@@ -1,0 +1,91 @@
+@import url(style.css);
+
+.body{
+    
+}
+
+.container{
+    background-color: #0E1C36;
+    margin:0;
+    width:100vw;
+    height: 90vh;
+    align-content: start;
+}
+
+.card{
+    position: relative;
+    display: grid;
+    width: max-content;
+    height: 70vh;
+    grid-template-rows: repeat(3, 1fr);
+    justify-self: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#A3F7B5,#40C9A2);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 32px;
+    text-align: center
+}
+
+.row1{
+    text-align: center;
+    align-content: center;
+}
+#quiz-name{
+    font-size: 32px;
+}
+
+#score{
+  font-size: 40px;
+  padding:1rem;
+}
+
+.row2{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.row3{
+    text-align: left;
+}
+
+.row3 h4{
+    font-weight: 500;
+    font-size: 16px;
+    margin:0.5rem;
+}
+
+.progress-bar {
+    z-index: 0;
+    border-radius: 60px;
+    display: flex;
+    align-content: center;
+    padding: 1rem;
+    width: 300px; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-color: #0e1c3683; /* Background color for the bar */
+  }
+  
+  #pf1 {
+
+    border-radius: 60px;
+    position: relative;
+    z-index:-1;
+    width: 50%; /* Initial progress (change based on score) */
+    height: inherit;
+    background-color: #007bff; /* Fill color */
+}
+#pf2 {
+
+    border-radius: 60px;
+    position: relative;
+    z-index:-1;
+    width: 50%; /* Initial progress (change based on score) */
+    height: inherit;
+    background-color: #17991c; /* Fill color */
+}
+
+
+
+  

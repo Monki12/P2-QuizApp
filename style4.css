@@ -45,7 +45,8 @@
     width:98%;
     margin:0 1.2rem 0 0.5rem;
     position: absolute;
-    height: fit-content;
+    min-height: 24%;
+    height:fit-content;
     top:0;
     left:0;
     background-color: #CEDADA;
@@ -202,21 +203,79 @@
     border: 0;
 }
 
+
 #save-btn:hover{
     background-color: #009F93;
     color : aliceblue;
 }
 
-#review-btn:hover{
+#review-btn:hover,#submit-btn:hover{
     background-color: #6a00ec;
     color : aliceblue;
 }
 
-#skip-btn:hover{
+.btns button:hover{
     background-color: #858383;
     color : aliceblue;
 }
 
+#next-btn:hover{
+    background-color: #FFA630;
+    color :#0e1c36;
+}
 
+.calc{
+    display: none;
+    position: relative;
+    bottom:2.5rem;
+    left:1rem;
+    width:20rem;
+    height: fit-content;
+    background-color: #2F2F2F;
+    border-radius: 10px;
+}
+
+#calc.show{
+    display:block;
+}
+
+.calc input ,.buttons button{
+    width:90%;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    height: 60px;
+    box-shadow: -8px -8px 15px rgb(255,255,255,0.1), 5px 5px 15px rgb(0,0,0,0.2);
+    background: transparent;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    
+    margin:10px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0.5rem;
+    padding-right: 1rem;
+}
+
+.buttons button{
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.display{
+    display: flex;
+    justify-content: right;
+    margin:20px 0;
+}
+
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 2.5rem;
+    box-shadow: none;
+}
 
 

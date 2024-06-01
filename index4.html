@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style4.css">
-        <script defer src="script4.js"></script>
+        <script defer type="module" src="script4.js"></script>
     
         <!--google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
     <div class="container">
         <!--Timer Display-->
         <div class="section1">
-            <p>00:30:00</p>
+            <p></p>
         </div>
 
         <div class="section2">
@@ -60,28 +60,28 @@
                 <div class="row2">
                     <div class="option">
     
-                        <button id="optionA">
+                        <button id="1">
                             <h1>A</h1>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis praesentium quasi quia voluptas, aspernatur omnis, excepturi est tenetur, esse distinctio labore perspiciatis deserunt saepe consectetur repellendus modi corporis commodi.</p>
+                            <p></p>
                         </button>
                     </div>
     
                     <div class="option">
-                        <button id="optionB">
+                        <button id="2">
                             <h1>B</h1>
-                            <p>Stars</p>
+                            <p></p>
                         </button>
                     </div>
                     <div class="option">
-                        <button id="optionC">
+                        <button id="3">
                             <h1>C</h1>
-                            <p>Stars</p>
+                            <p></p>
                         </button>
                     </div>
                     <div class="option">
-                        <button id="optionD">
+                        <button id="4">
                             <h1>D</h1>
-                            <p>Stars</p>
+                            <p></p>
                         </button>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                 <div class="row3">
                     <button id="save-btn">Save</button>
                     <button id="review-btn">Mark for Review</button>
-                    <button id="skip-btn">Skip</button>
+                    <button id="next-btn">Next</button>
                 </div>
             </div>
     
@@ -112,11 +112,48 @@
                 <div class="panel" id="panel3">
                     
                 </div>
+                <!--Calculator-->
+                <div class="calc" id="calc">
+                    <form>
+                    <div class="display">
+                        <input type="button" name="display" id="result">
+                    </div>
+                
+                    <div class="buttons">
+                        <input type="button" value="AC" onclick="display.value = ''">
+                        <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                        <input type="button" value="." onclick="display.value += '.'">
+                        <input type="button" value="/" onclick="display.value += '/'">
+                        <input type="button" value="7" onclick="display.value += '7'">
+                        <input type="button" value="8" onclick="display.value += '8'">
+                        <input type="button" value="9" onclick="display.value += '9'">
+                        <input type="button" value="*" onclick="display.value += '*'">
+                        <input type="button" value="4" onclick="display.value += '4'">
+                        <input type="button" value="5" onclick="display.value += '5'">
+                        <input type="button" value="6" onclick="display.value += '6'">
+                        <input type="button" value="-" onclick="display.value += '-'">
+                        <input type="button" value="1" onclick="display.value += '1'">
+                        <input type="button" value="2" onclick="display.value += '2'">
+                        <input type="button" value="3" onclick="display.value += '3'">
+                        <input type="button" value="+" onclick="display.value += '+'">
+                        <input type="button" value="00" onclick="display.value +='00'">
+                        <input type="button" value="0" onclick="display.value += '0'">
+                        <input type="button" value="%" onclick="display.value += '%'" >
+                        <input type="button" value="=" onclick="display.value= eval(display.value)" >
+
+                    </div>
+                
+                    <script>
+                        
+                    </script>
+                  </form>  
+                </div>
+
                 <!--Buttons-->
                 <div class="btns">
-                    <button id="calculator-btn">calc</button>
-                    <button id="Exit-btn">Exit</button>
-                    <button id="Submit-btn">Submit</button>
+                    <button id="calc-btn">calc</button>
+                    <button id="exit-btn">Exit</button>
+                    <button id="submit-btn">Submit</button>
                 </div>
             </div>
         </div>
