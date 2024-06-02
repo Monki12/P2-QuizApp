@@ -17,11 +17,11 @@
     
     
         <!--fav-icon-->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-    
+     -->
         
         <title>
             QuizApp
@@ -43,31 +43,32 @@
     <div class="container">
         <div class="card">
             <div class="row1">
-                <h3 id="quiz-name">Quiz Name : Name</h3>
+                <h2 id="quiz-name">Quiz Name</h2>
                 <p id="noQ">Number of Questions : 2</p>
-                <p class="time">Time: 20mins</p>
+                <p id="time">Time : 20mins</p>
             </div>
             <div class="row2">
+                
                 <div class="progress-bar">
-                    <div id="pf1"></div>
-                    <div id="pf2"></div>
+                    <p>% attempted</p>
+                    <div id="pf1">10%</div>
+                    <!-- <div id="pf2"></div>
                     <div id="pf3"></div>
                     <div id="pf4"></div>
-                    <div id="pf5"></div>
+                    <div id="pf5"></div> -->
                 </div>
                 <div class="score">
                     <h2 id="score">5/10</h2>
+                    <p>Score</p>
                 </div>
             </div>
             <div class="row3">
-                <h4 class="details" id="d1">Number of Correct Questions:</h4>
-                <h4 class="details" id="d0">Number of Incorrect Questions:</h4>
-                <h4 class="details" id="d2">Number of Questions Marked for review:</h4>
-                <h4 class="details" id="d3">Number of Unattempted Questions:</h4>
-                <h4 class="details" id="dnull">Number of Unseen Questions:</h4>
+                <h4 class="details" id="avg-time">Average time taken per Question : 1min 20s</h4>
+                <h3 id="phrase">Marvelous!! You nailed it!</h3>
             </div>
             <div class="row4">
-                <button class="home-btn">Go to home</button>
+                <button id="analysis-btn">Quiz Analysis</button>
+                <button id="home-btn">Go to home</button>
             </div>
         </div>
     </div>

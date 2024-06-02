@@ -12,6 +12,8 @@
     align-content: start;
 }
 
+
+
 .card{
     position: relative;
     display: grid;
@@ -32,60 +34,96 @@
     align-content: center;
 }
 #quiz-name{
-    font-size: 32px;
+    font-size: 36px;
 }
 
 #score{
   font-size: 40px;
-  padding:1rem;
+  padding:1rem 0 0rem 0.5rem;
+  margin-bottom: 0;
+}
+.score p{
+    margin-top: 0;
+    position: relative;
+    top:-0.8rem;
+    left:0.2rem;
+    font-size: 12px;
 }
 
 .row2{
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
+    align-self: center;
 }
 
 .row3{
-    text-align: left;
+    text-align: center;
+    align-self: center;
 }
 
 .row3 h4{
+    color: #333;
     font-weight: 500;
     font-size: 16px;
     margin:0.5rem;
 }
 
+.row3 h3{
+    font-weight: 700;
+}
+
 .progress-bar {
+    position: relative;
+    align-self: center;
     z-index: 0;
     border-radius: 60px;
     display: flex;
     align-content: center;
-    padding: 1rem;
-    width: 300px; /* Adjust width as needed */
-    height: 100%; /* Adjust height as needed */
-    background-color: #0e1c3683; /* Background color for the bar */
+    padding: 2rem 0.5rem 0 0.5rem;
+    width:300px; /* Adjust width as needed */
+    height: 30px; 
+    background-color: #ddd; /* Background color for the bar */
   }
+
+  .progress-bar p{
+    font-size: 12px;
+  }
+
+  #pf1{
+    border-radius: 60px;
+    position: absolute;
+    left:0;
+    top:0;
+    height: 30px;
+    color: azure;
+    text-align: center;
+    align-content: center;
+    background-color: #6F2DBD;
+  }
+
   
-  #pf1 {
-
-    border-radius: 60px;
-    position: relative;
-    z-index:-1;
-    width: 50%; /* Initial progress (change based on score) */
-    height: inherit;
-    background-color: #007bff; /* Fill color */
-}
-#pf2 {
-
-    border-radius: 60px;
-    position: relative;
-    z-index:-1;
-    width: 50%; /* Initial progress (change based on score) */
-    height: inherit;
-    background-color: #17991c; /* Fill color */
+.row4 button{
+    margin: 4px;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #0e1c36;
+    border: 0;
+    outline: 0;
+    border-radius: 32px;
 }
 
+#home-btn:hover{
+    background-color:#0B4F6C ;
+    color: azure;
+}
+
+#analysis-btn:hover{
+    background-color:#6F2DBD ;
+    color: azure;
+}
 
 
   

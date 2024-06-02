@@ -1,5 +1,65 @@
 [
   {
+    "name": "Physics",  
+    "time": 10,
+    "numofQ": 12,
+    "categories": ["Mechanics ", "Electricity & Magnetism ⚡", "Waves & Optics ✨"],  
+    "phrase": "Level up your Physics with the built-in calculator!",
+    "bgimgurl": "./images/hogwarts.jpg",
+    "Qblocks": [
+      {
+        "question": "Car goes 0 to 20 m/s in 5 seconds. What's its acceleration? (Use calc: a = (v_f - v_i) / t)",
+        "options": ["Use the calculator", "2 m/s^2", "5 m/s^2", "20 m/s^2"],
+        "ans": 0,  
+        "level": 1
+      },
+      {
+        "question": "10 kg object gets pushed with 20 N force. What's its acceleration? (Use g = 9.8 m/s^2)",
+        "options": ["Use the calculator: a = F / m", "0.5 m/s^2", "2 m/s^2", "20 m/s^2"],
+        "ans": 0,  
+        "level": 2
+      },
+      {
+        "question": "Circuit with 5 ohm resistance has 2 amp current. What's the voltage? (Use calc: V = I * R)",
+        "options": ["Use the calculator", "5 volts", "10 volts", "20 volts"],
+        "ans": 0,  
+        "level": 2
+      },
+      {
+        "question": "Light wave: 5 x 10^14 Hz frequency, 6 x 10^-7 m wavelength. What's its speed? (Use calc: c = f * λ)",
+        "options": ["Use the calculator", "3 x 10^7 m/s", "1.8 x 10^7 m/s", "9 x 10^21 m/s"],
+        "ans": 0,  
+        "level": 3
+      },
+      {
+        "question": "3 kg object moving at 4 m/s. What's its kinetic energy? (Use calc: KE = 1/2 * m * v^2)",
+        "options": ["Use the calculator", "6 J", "12 J", "24 J"],
+        "ans": 0,  
+        "level": 1
+      },
+      {
+        "question": "Lifting a 10 N box 2 meters. What's the work done against gravity? (Use g = 9.8 m/s^2)",
+        "options": ["Use the calculator: W = F * d", "10 J", "19.6 J", "20 J"],
+        "ans": 0,  
+        "level": 2
+      },
+      {
+        "question": "Sound wave travels from air (343 m/s) to water (1480 m/s). Starts at 200 Hz in air. What's the frequency in water? (f_water = f_air * v_air / v_water)",
+        "options": ["The frequency stays the same (200 Hz)", "Use the calculator", "Cannot be determined without wavelength", "Depends on the intensity of the wave"],
+        "ans": 1,  
+        "level": 3
+      },
+      {
+        "question": "Inelastic collision: 4 kg object at 3 m/s hits 6 kg object at rest. What's the final combined velocity? (v_final = (m1 * v1 + m2 * v2) / (m1 + m2))",
+        "options": ["Use the calculator", "1.2 m/s", "2 m/s", "Cannot be determined without more info"],
+        "ans": 1,  
+        "level": 3
+      }
+    ]
+  }
+  
+  ,
+  {
     "name": "Potterhead Quiz",
     "time": 15,
     "numofQ": 10,
@@ -71,7 +131,7 @@
   },
 
   {
-    "name": "How You Doin'? A Friends Quiz",
+    "name": "How You Doin'?",
     "time": 10,
     "numofQ": 8,
     "categories": ["TV Shows", "Friends"],
@@ -117,7 +177,7 @@
       {
         "question": "What is the name of the Geller Cup, a competition between Monica and Ross?",
         "ans": "The Holiday Armadillo",
-        "options": ["The Geller Cup",  "The Sibling Showdown", "The Geller Games", "The Holiday Competition"],
+        "options": ["The Geller Cup",  "The Holiday Armadillo", "The Geller Games", "The Holiday Competition"],
         "level": 3
       },
       {

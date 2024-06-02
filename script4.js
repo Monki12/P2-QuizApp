@@ -1,6 +1,29 @@
+
+//icon btn
+document.querySelector(".icon button").addEventListener("click",()=>{
+  window.location.href = "index.html";
+});
+
+let currentQuestion="1-1";
+let selectedQuiz={};
+const questionMap = {}; // Stores mapping of question number (within level) to its index in SQz.Qblocks
+let ansMap={};//saves ans when returning to same question
+let responseMap={};//save whether question was 1-right/0-wrong/2review and not saved/3-seenunattempted/null-unseen
+let timeMap={};//saves time taken per question
+
+const options = document.querySelectorAll(".option");
+let selectedOption = null; // Variable to store the currently selected option element
+
+//setting panel and tab
+const tabs = document.querySelectorAll('.tabs button');
+const panels = document.querySelectorAll('.panel');
+const defaultPanelId = 'panel1'; 
+
+
+
 //getting reference to selected quiz
 const storedQuiz = localStorage.getItem('selectedQuiz');
-let selectedQuiz={};
+
 if (storedQuiz) {
     selectedQuiz = JSON.parse(storedQuiz); // Parse JSON back to object
   // Access and display quiz content using selectedQuiz object
@@ -9,7 +32,26 @@ if (storedQuiz) {
   console.warn("No selected quiz found in local storage");
   // Handle cases where no quiz is stored
 }
-localStorage.removeItem('selectedCategory');
+localStorage.removeItem('selectedQuiz');
+
+//submit button
+document.getElementById("submit-btn").addEventListener('click',()=>{
+  let submit=window.confirm("Are you sure you want to submit?");
+  if(submit)
+    {
+      stopQwatch(currentQuestion);
+      watchStop();
+      console.log(responseMap);
+      console.log(timeMap);
+      console.log(selectedQuiz);
+      localStorage.setItem('timeMap',JSON.stringify(timeMap));
+      localStorage.setItem('responseMap',JSON.stringify(responseMap));
+      localStorage.setItem('selectedQuiz', JSON.stringify(selectedQuiz));
+      window.location.href="index5.html";
+   }
+  
+});
+
 
 
 //setting height of section2
@@ -56,19 +98,6 @@ eg.
 
 */
 
- let currentQuestion="1-1";
-const questionMap = {}; // Stores mapping of question number (within level) to its index in SQz.Qblocks
-let ansMap={};//saves ans when returning to same question
-let responseMap={};//save whether question was 1-right/0-wrong/2review and not saved/3-seenunattempted/null-unseen
-let timeMap={};//saves time taken per question
-
-const options = document.querySelectorAll(".option");
-let selectedOption = null; // Variable to store the currently selected option element
-
-//setting panel and tab
-const tabs = document.querySelectorAll('.tabs button');
-const panels = document.querySelectorAll('.panel');
-const defaultPanelId = 'panel1'; 
 
 
 function createQuestionButtons(selectedQuiz) {
@@ -331,21 +360,7 @@ document.getElementById("calc-btn").addEventListener('click',()=>{
  document.querySelector("#calc").classList.toggle("show");
 });
 
-//submit button
-document.getElementById("submit-btn").addEventListener('click',()=>{
-  let submit=window.confirm("Are you sure you want to submit?");
-  if(submit)
-    {
-      stopQwatch(currentQuestion);
-      watchStop();
-      console.log(responseMap);
-      console.log(timeMap);
-      console.log(ansMap);
-      localStorage.setItem('selectedQuiz', JSON.stringify(selectedQuiz));
-      window.location.href="index5.html";
-   }
-  
-});
+
 
 //exit button
 document.getElementById("exit-btn").addEventListener('click',()=>{
@@ -354,6 +369,7 @@ document.getElementById("exit-btn").addEventListener('click',()=>{
     {
       stopQwatch(currentQuestion);
       watchStop();
+      localStorage.setItem('selectedQuiz', JSON.stringify(selectedQuiz));
       window.history.go(-1);
     }
 });
@@ -416,6 +432,3 @@ function watchStop(){
   clearInterval(timer);
 }
 
-export{
-  responseMap,timeMap
-};
