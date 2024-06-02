@@ -1,69 +1,70 @@
 [
   {
-    "name": "Physics",  
-    "time": 10,
-    "numofQ": 12,
-    "categories": ["Mechanics ", "Electricity & Magnetism ⚡", "Waves & Optics ✨"],  
-    "phrase": "Level up your Physics with the built-in calculator!",
-    "bgimgurl": "./images/hogwarts.jpg",
+    "name": "Math Madness",
+    "time": 8,
+    "numofQ": 8,
+    "categories": ["Math", "Logic","Academics"],
+    "phrase": "Ready to test your mathematical muscles? Get ready for some Math Madness!",
+    "bgimgurl": "./images/math-background.jpg",
     "Qblocks": [
       {
-        "question": "Car goes 0 to 20 m/s in 5 seconds. What's its acceleration? (Use calc: a = (v_f - v_i) / t)",
-        "options": ["Use the calculator", "2 m/s^2", "5 m/s^2", "20 m/s^2"],
-        "ans": 0,  
+        "question": "If a train travels 120 miles in 2 hours, what is its speed in miles per hour?",
+        "options": ["40 mph", "60 mph", "80 mph", "100 mph"],
+        "ans": 1,
         "level": 1
       },
       {
-        "question": "10 kg object gets pushed with 20 N force. What's its acceleration? (Use g = 9.8 m/s^2)",
-        "options": ["Use the calculator: a = F / m", "0.5 m/s^2", "2 m/s^2", "20 m/s^2"],
-        "ans": 0,  
-        "level": 2
-      },
-      {
-        "question": "Circuit with 5 ohm resistance has 2 amp current. What's the voltage? (Use calc: V = I * R)",
-        "options": ["Use the calculator", "5 volts", "10 volts", "20 volts"],
-        "ans": 0,  
-        "level": 2
-      },
-      {
-        "question": "Light wave: 5 x 10^14 Hz frequency, 6 x 10^-7 m wavelength. What's its speed? (Use calc: c = f * λ)",
-        "options": ["Use the calculator", "3 x 10^7 m/s", "1.8 x 10^7 m/s", "9 x 10^21 m/s"],
-        "ans": 0,  
-        "level": 3
-      },
-      {
-        "question": "3 kg object moving at 4 m/s. What's its kinetic energy? (Use calc: KE = 1/2 * m * v^2)",
-        "options": ["Use the calculator", "6 J", "12 J", "24 J"],
-        "ans": 0,  
+        "question": "What is the area of a rectangle with a length of 5 cm and a width of 3 cm?",
+        "options": ["8 cm", "10 cm", "12 cm", "15 cm"],
+        "ans": 0,
         "level": 1
       },
       {
-        "question": "Lifting a 10 N box 2 meters. What's the work done against gravity? (Use g = 9.8 m/s^2)",
-        "options": ["Use the calculator: W = F * d", "10 J", "19.6 J", "20 J"],
-        "ans": 0,  
+        "question": "Find the perimeter of a square with a side length of 7 meters.",
+        "options": ["14 m", "21 m", "28 m", "35 m"],
+        "ans": 2,
+        "level": 1
+      },
+      {
+        "question": "The sum of three consecutive odd numbers is 39. What is the smallest number?",
+        "options": ["11", "12", "13", "14"],
+        "ans": 0,
         "level": 2
       },
       {
-        "question": "Sound wave travels from air (343 m/s) to water (1480 m/s). Starts at 200 Hz in air. What's the frequency in water? (f_water = f_air * v_air / v_water)",
-        "options": ["The frequency stays the same (200 Hz)", "Use the calculator", "Cannot be determined without wavelength", "Depends on the intensity of the wave"],
-        "ans": 1,  
+        "question": "A circle has a diameter of 10 cm. What is the circle's radius?",
+        "options": ["2.5 cm", "3.14 cm", "5 cm", "7.5 cm"],
+        "ans": 0,
+        "level": 2
+      },
+      {
+        "question": "What is the volume of a cube with a side length of 4 cm?",
+        "options": ["16 cm³", "32 cm³", "64 cm³", "128 cm³"],
+        "ans": 2,
+        "level": 2
+      },
+      {
+        "question": "What is the next number in the sequence: 2, 4, 8, 16?",
+        "options": ["20", "24", "32", "48"],
+        "ans": 2,
         "level": 3
       },
       {
-        "question": "Inelastic collision: 4 kg object at 3 m/s hits 6 kg object at rest. What's the final combined velocity? (v_final = (m1 * v1 + m2 * v2) / (m1 + m2))",
-        "options": ["Use the calculator", "1.2 m/s", "2 m/s", "Cannot be determined without more info"],
-        "ans": 1,  
+        "question": "If there are 60 seconds in a minute, how many seconds are there in 3 hours?",
+        "options": ["900 sec", "10,800 sec", "18,000 sec", "21,600 sec"],
+        "ans": 2,
         "level": 3
       }
     ]
   }
+  
   
   ,
   {
     "name": "Potterhead Quiz",
     "time": 15,
     "numofQ": 10,
-    "categories": ["Harry Potter", "General Knowledge"],
+    "categories": ["Harry Potter", "Sci-fi","Books"],
     "phrase": "Accio knowledge! Test your Harry Potter expertise!",
     "bgimgurl": "./images/hogwarts.jpg",
     "Qblocks": [
@@ -134,7 +135,7 @@
     "name": "How You Doin'?",
     "time": 10,
     "numofQ": 8,
-    "categories": ["TV Shows", "Friends"],
+    "categories": ["TV Shows", "Friends","Fun"],
     "phrase": "The One Where You Test Your Friends Knowledge!",
     "bgimgurl": "./images/friends_centralperk.jpg",
     "Qblocks": [
@@ -190,57 +191,77 @@
   }
 ,  
   
+{
+  "name": "Marvel Physics",
+  "time": 10,
+  "numofQ": 5,
+  "categories": ["Physics", "Marvel Universe","TV Shows","Academics"],
+  "phrase": "Suit up, True Believers! Test your knowledge of physics with these Marvel-ous questions!",
+  "bgimgurl": "./images/marvel-science.jpg",
+  "Qblocks": [
     {
-      "name": "Capital Cities",
-      "time": 10,
-      "numofQ": 6,  
-      "categories": ["Geography", "World"],
-      "phrase": "Guess the capitals of these countries!",
-      "bgimgurl":"./images/capital.jpg",
-      "Qblocks": [
-        {
-          "question": "What is the capital of France?",
-          "options": ["London", "Paris", "Berlin", "Madrid"],
-          "ans": 1,
-          "level": 1
-        },
-        {
-          "question": "What is the capital of Italy?",
-          "options": ["Rome", "Milan", "Venice", "Florence"],
-          "ans": 0,
-          "level": 1
-        },
-        {
-          "question": "What is the capital of Japan?",
-          "options": ["Tokyo", "Kyoto", "Osaka", "Yokohama"],
-          "ans": 0,
-          "level": 1
-        },
-        {
-          "question": "What is the capital of Germany?",
-          "options": ["Berlin", "Munich", "Hamburg", "Cologne"],
-          "ans": 0,
-          "level": 1
-        },
-        {
-          "question": "What is the capital of Canada?",
-          "options": ["Ottawa", "Toronto", "Montreal", "Vancouver"],
-          "ans": 0,
-          "level": 1
-        },
-        {
-          "question": "What is the capital of Australia?",
-          "options": ["Canberra", "Sydney", "Melbourne", "Brisbane"],
-          "ans": 0,
-          "level": 2
-        }
-      ]
+      "question": "Iron Man flies using repulsor rays. According to Newton's Third Law of Motion, what happens when he fires these rays?",
+      "options": [
+        "He is pulled backward with an equal and opposite force.",
+        "He experiences a brief period of weightlessness.",
+        "The rays create a sonic boom.",
+        "He teleports to his destination."
+      ],
+      "ans": 0,
+      "level": 2
     },
+    {
+      "question": "Captain America throws his vibranium shield. When the shield rebounds off an object, which law of physics is in action?",
+      "option": [
+        "Law of Conservation of Energy",
+        "Law of Universal Gravitation",
+        "Law of Inertia",
+        "Law of Thermodynamics"
+      ],
+      "ans": 0,
+      "level": 2
+    },
+    {
+      "question": "Hulk smashes! When Hulk punches the ground, what kind of energy does he transfer to the ground?",
+      "options": [
+        "Chemical energy",
+        "Kinetic energy",
+        "Nuclear energy",
+        "Sound energy"
+      ],
+      "ans": 1,
+      "level": 1
+    },
+    {
+      "question": "Spider-Man swings from buildings using webs. Which property of the webs allows him to do this?",
+      "options": [
+        "Strength",
+        "Elasticity",
+        "Conductivity",
+        "Durability"
+      ],
+      "ans": 1,
+      "level": 2
+    },
+    {
+      "question": "Thor throws his hammer Mjolnir with incredible force. When Mjolnir flies through the air, what is acting upon it?",
+      "options": [
+        "Only gravity",
+        "Only inertia",
+        "Both gravity and inertia",
+        "Neither gravity nor inertia"
+      ],
+      "ans": 2,
+      "level": 3
+    }
+  ]
+}
+,
     {
       "name": "Science for Everyone",
       "time": 15,
       "numofQ": 8,  
-      "categories": ["Science", "General Knowledge"],
+      "categories": ["Science", "General Knowledge","Academics"],
       "phrase": "Test your scientific understanding!",
       "bgimgurl":"./images/night.jpg",
       "Qblocks": [
@@ -294,63 +315,83 @@
         }
       ]
     },
+    
     {
-        "name": "History in the Making",
-        "time": 20,
-        "numofQ": 7,  
-        "categories": ["History", "World Events"],
-        "phrase": "Can you recall some major historical events?",
-        "bgimgurl":"./images/history.jpg",
-        "Qblocks": [
-          {
-            "question": "In which year did World War II begin?",
-            "options": ["1914", "1939", "1945", "1989"],
-            "ans": 1,
-            "level": 2
-          },
-          {
-            "question": "Who was the first person to walk on the moon?",
-            "options": ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Laika"],
-            "ans": 0,
-            "level": 2
-          },
-          {
-            "question": "What major event marked the end of the Cold War?",
-            "options": ["Fall of the Berlin Wall", "Cuban Missile Crisis", "Korean War", "Vietnam War"],
-            "ans": 0,
-            "level": 2
-          },
-          {
-            "question": "The September 11th attacks occurred in which year?",
-            "options": ["2001", "2003", "2008", "2011"],
-            "ans": 0,
-            "level": 2
-          },
-          {
-            "question": "What social media platform emerged during the Arab Spring protests?",
-            "options": ["Facebook", "Twitter", "Instagram", "Snapchat"],
-            "ans": 1,
-            "level": 3
-          },
-          {
-            "question": "Which country hosted the 2016 Summer Olympics?",
-            "options": ["Brazil", "China", "Japan", "Great Britain"],
-            "ans": 0,
-            "level": 2
-          },
-          {
-            "question": "What global pandemic emerged in late 2019?",
-            "options": ["COVID-19", "Ebola", "HIV/AIDS", "SARS"],
-            "ans": 0,
-            "level": 2
-          }
-        ]
-      },
+      "name": "Bazinga! Science",
+      "time": 15,
+      "numofQ": 10,
+      "categories": ["Science", "Big Bang Theory","Academics","Fun","TV Shows"],
+      "phrase": "Live long and prosper... or maybe not! Test your science knowledge with a Big Bang Theory twist!",
+      "bgimgurl": "./images/bbt-science-lab.jpg",
+      "Qblocks": [
+        {
+          "question": "Sheldon likes to collect rare elements. What is the element on the periodic table represented by the symbol 'Au'?",
+          "options": ["Silver", "Gold", "Copper", "Platinum"],
+          "ans": 1,
+          "level": 1
+        },
+        {
+          "question": "According to the Big Bang Theory, Sheldon dislikes what scientific theory?",
+          "options": ["Evolution", "Quantum Mechanics", "General Relativity", "String Theory"],
+          "ans": 0,
+          "level": 2 
+        },
+        {
+          "question": "What is the process by which plants convert sunlight into energy?",
+          "options": ["Photosynthesis", "Cellular Respiration", "Mitosis", "Meiosis"],
+          "ans": 0,
+          "level": 2
+        },
+        {
+          "question": "What is the scientific term for the fear of enclosed spaces?",
+          "options": ["Acrophobia", "Claustrophobia", "Agoraphobia", "Nyctophobia"],
+          "ans": 1,
+          "level": 2 
+        },
+        {
+          "question": "What is the name of the theory that explains the formation and evolution of the universe?",
+          "options": ["String Theory", "The Big Bang Theory", "Quantum Mechanics", "General Relativity"],
+          "ans": 1,
+          "level": 3 
+        },
+        {
+          "question": "In the show, what is the name of the experiment Sheldon conducts that results in a fire at the university?",
+          "options": ["The String Theory Experiment", "The Schrodinger's Cat Experiment", "The Higgs Boson Experiment", "The Cold Fusion Experiment"],
+          "ans": 3,
+          "level": 3
+        },
+        {
+          "question": "What is the outermost layer of the Earth's atmosphere?",
+          "options": ["Troposphere", "Stratosphere", "Mesosphere", "Exosphere"],
+          "ans": 3,
+          "level": 2
+        },
+        {
+          "question": "What is the scientific study of the nervous system called?",
+          "options": ["Psychology", "Neurology", "Psychiatry", "Cognition"],
+          "ans": 1,
+          "level": 2 
+        },
+        {
+          "question": "What is the SI unit of measurement for force?",
+          "options": ["Gram", "Meter", "Newton", "Kelvin"],
+          "ans": 2,
+          "level": 2
+        },
+        {
+          "question": "What is the process by which cells divide to create new cells?",
+          "options": ["Photosynthesis", "Cellular Respiration", "Mitosis", "Meiosis"],
+          "ans": 2,
+          "level": 2
+        }
+      ]
+    }
+    ,
       {
         "name": "Math Challenge",
         "time": 25,
         "numofQ": 10,  
-        "categories": ["Mathematics", "Numbers"],
+        "categories": ["Mathematics", "Numbers","Academics"],
         "phrase": "Sharpen your math skills with this challenge!",
         "bgimgurl":"./images/math.jpg",
         "Qblocks": [
@@ -421,7 +462,7 @@
         "name": "Treasures of the World",
         "time": 12,
         "numofQ": 5,
-        "categories": ["History", "Geography", "Culture"],
+        "categories": ["History", "Geography", "Culture","General Knowledge"],
         "phrase": "Explore famous landmarks and cultural wonders!",
         "bgimgurl":"./images/treasures.jpg",
         "Qblocks": [
@@ -514,7 +555,7 @@
             "name": "Literary Detectives",
             "time": 15,
             "numofQ": 6,
-            "categories": ["Literature", "Mystery"],
+            "categories": ["Literature", "Mystery","Books"],
             "phrase": "Put on your detective hat and solve literary puzzles!",
             "bgimgurl":"./images/literature.jpg",
             "Qblocks":
